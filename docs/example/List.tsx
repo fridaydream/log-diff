@@ -4,7 +4,7 @@ import { isEqual, range } from 'lodash';
 import { Typography, List} from 'antd';
 import LogDiff from 'log-diff';
 
-import styles from './index.less';
+import styles from './index.css';
 
 const { Title, Text } = Typography;
 
@@ -19,12 +19,18 @@ const Demo = () => {
     before: {
       business: {
         details: [
+          {
+            area: []
+          }
         ],
       }
     },
     after: {
       business: {
         details: [
+          {
+            area: []
+          }
         ],
       }
     },
@@ -32,25 +38,17 @@ const Demo = () => {
   })
   useEffect(() => {
     setTimeout(() => {
-      setData({
+      const data = {
         before: {
           business: {
             details: [
               {
-                lc: [],
-                area: [
-                  'tc311y',
-                  'tc755y',
-                ],
+                area: [ 'tc311y', 'tc755y' ],
                 license: 'a287'
               },
               {
-                lc: [
-                ],
                 area: [
                   'tc755y'
-                ],
-                shop: [
                 ],
                 license: 'a273'
               }
@@ -69,7 +67,8 @@ const Demo = () => {
             'tc755y': '上海',
           }
         },
-      })
+      }
+      setData(data as any)
     }, 1000);
   }, []);
   const {

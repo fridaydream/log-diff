@@ -1,21 +1,39 @@
 {
   "name": "log-diff",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "log compare",
+  "repository": "https://github.com/ant-design/pro-table",
   "scripts": {
     "build": "father build && webpack",
     "lint": "npm run lint-eslint && npm run lint:style && tsc --noEmit",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./**/src ./tests && npm run lint:style",
     "lint:style": "stylelint --fix  \"src/**/*.less\"  --syntax less",
-    "prepublishOnly": "npm run test && npm run build && np --no-cleanup --yolo --no-publish",
     "prettier": "prettier -c --write \"**/*\"",
     "site": "dumi build && gh-pages -d ./dist",
+    "gh-page": "gh-pages -d ./dist",
     "start": "npx dumi dev",
     "test": "npm run lint && father test"
   },
-  "keywords": [],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib",
+    "/es",
+    "/dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "keywords": ["log", "diff"],
   "authors": {
     "name": "cp",
     "email": "daxierhao@gmail.com"
@@ -49,10 +67,12 @@
     "jsdom-global": "^3.0.2",
     "less-loader": "^6.0.0",
     "prettier": "^2.0.5",
+    "supports-color": "^7.1.0",
     "typescript": "^3.3.3",
     "umi": "^3.2.2",
     "umi-plugin-githubpages": "^2.0.1",
-    "umi-request": "^1.2.15"
+    "umi-request": "^1.2.15",
+    "webpack-cli": "^3.3.11"
   },
   "peerDependencies": {
     "react": "16.x"

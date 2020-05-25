@@ -1,9 +1,9 @@
 import React from 'react';
 
+export interface NestedArray<T> extends Array<T | NestedArray<T>> { }
+
 export interface Content {
-  [key: string]: {
-    [key: string]: any
-  };
+  [key: string]: any
 }
 
 interface Data {
@@ -41,8 +41,6 @@ export type StoreValue = any;
 export interface Store {
   [name: string]: StoreValue;
 }
-
-export interface NestedArray<T> extends Array<T | NestedArray<T>> { }
 
 export interface NameDataType {
   before: NestedArray<string>;
