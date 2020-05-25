@@ -11,6 +11,7 @@
     "lint:style": "stylelint --fix  \"src/**/*.less\"  --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
     "site": "dumi build",
+    "docs:build": "dumi build && gh-pages -d ./dist",
     "deploy": "gh-pages -d ./dist",
     "start": "npx dumi dev",
     "test": "npm run lint && father test"
