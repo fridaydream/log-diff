@@ -2,7 +2,7 @@
   "name": "log-diff",
   "version": "1.0.0",
   "description": "log compare",
-  "repository": "https://github.com/ant-design/pro-table",
+  "repository": "https://github.com/fridaydream/log-diff",
   "scripts": {
     "build": "father build && webpack",
     "lint": "npm run lint-eslint && npm run lint:style && tsc --noEmit",
@@ -10,8 +10,8 @@
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./**/src ./tests && npm run lint:style",
     "lint:style": "stylelint --fix  \"src/**/*.less\"  --syntax less",
     "prettier": "prettier -c --write \"**/*\"",
-    "site": "dumi build && gh-pages -d ./dist",
-    "gh-page": "gh-pages -d ./dist",
+    "site": "dumi build",
+    "deploy": "gh-pages -d ./dist",
     "start": "npx dumi dev",
     "test": "npm run lint && father test"
   },
@@ -33,16 +33,17 @@
     "last 2 versions",
     "not ie <= 10"
   ],
-  "keywords": ["log", "diff"],
+  "keywords": [
+    "log",
+    "diff"
+  ],
   "authors": {
     "name": "cp",
     "email": "daxierhao@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
-    "@types/lodash.isarray": "^4.0.6",
-    "antd": "^4.1.5",
-    "lodash.isarray": "^4.0.0"
+    "antd": "^4.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",

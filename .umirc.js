@@ -13,4 +13,7 @@ export default {
     ],
   ],
   hash: true,
+  base: '/log-diff',
+  publicPath: '/log-diff/',
+  exportStatic: {},
 };
