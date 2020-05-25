@@ -17,6 +17,11 @@ hero:
 footer: Open-source MIT Licensed | Copyright © 2020-present
 ---
 
+<br/>
+
+[![](https://img.shields.io/npm/dw/log-diff.svg)](https://www.npmjs.com/package/log-diff) [![npm package](https://img.shields.io/npm/v/log-diff.svg?style=flat-square?style=flat-square)](https://www.npmjs.com/package/log-diff) [![](https://img.shields.io/github/issues/fridaydream/log-diff.svg)](https://github.com/fridaydream/log-diff/issues) [![Dependencies](https://img.shields.io/david/fridaydream/log-diff.svg?style=flat-square)](https://david-dm.org/fridaydream/log-diff) [![DevDependencies](https://img.shields.io/david/dev/fridaydream/log-diff.svg?style=flat-square)](https://david-dm.org/fridaydream/log-diff?type=dev)
+
+
 # API
 
 log-diff基于antd进行日志详情对比，参考antd的form表单。对后台返回的2种数据类型进行对比，支持嵌套和组合的方式对比。
