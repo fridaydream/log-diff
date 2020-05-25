@@ -1,0 +1,60 @@
+{
+  "name": "log-diff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "father build && webpack",
+    "lint": "npm run lint-eslint && npm run lint:style && tsc --noEmit",
+    "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./**/src ./tests && npm run lint:style",
+    "lint:style": "stylelint --fix  \"src/**/*.less\"  --syntax less",
+    "prepublishOnly": "npm run test && npm run build && np --no-cleanup --yolo --no-publish",
+    "prettier": "prettier -c --write \"**/*\"",
+    "site": "dumi build && gh-pages -d ./dist",
+    "start": "npx dumi dev",
+    "test": "npm run lint && father test"
+  },
+  "keywords": [],
+  "authors": {
+    "name": "cp",
+    "email": "daxierhao@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash.isarray": "^4.0.6",
+    "antd": "^4.1.5",
+    "lodash.isarray": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/classnames": "^2.2.9",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/lodash.tonumber": "^4.0.3",
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "@types/react-responsive": "^8.0.2",
+    "@umijs/babel-preset-umi": "^3.1.2",
+    "@umijs/fabric": "^2.0.0",
+    "babel-plugin-import": "^1.12.2",
+    "css-loader": "^3.5.3",
+    "dumi": "^1.0.25",
+    "eslint": "^6.8.0",
+    "father": "^2.29.3",
+    "husky": "^4.2.5",
+    "jsdom-global": "^3.0.2",
+    "less-loader": "^6.0.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.3.3",
+    "umi": "^3.2.2",
+    "umi-plugin-githubpages": "^2.0.1",
+    "umi-request": "^1.2.15"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  }
+}
