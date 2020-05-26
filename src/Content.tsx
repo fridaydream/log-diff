@@ -11,7 +11,7 @@ const RenderLabel = ({label, isSame}: LabelProps) => (
   <Text className={classNames('log-diff-item-label')}>
     <span className={classNames({'label-sign': !isSame})}>
       {
-        label || '--'
+        label || '-'
       }
     </span>
   </Text>
