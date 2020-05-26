@@ -12,6 +12,10 @@ export default {
       },
     ],
   ],
+  navs: [
+    null,
+    { title: 'GitHub', path: 'https://github.com/fridaydream/log-diff' },
+  ],
   hash: true,
   base: '/log-diff',
   publicPath: '/log-diff/',
