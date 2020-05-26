@@ -15,7 +15,8 @@
     "docs:build": "dumi build && gh-pages -d ./dist",
     "deploy": "gh-pages -d ./dist",
     "start": "npx dumi dev",
-    "test": "npm run lint && father test"
+    "test": "npm run lint && father test",
+    "jest:test": "father test"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
