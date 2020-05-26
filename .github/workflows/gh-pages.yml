@@ -18,10 +18,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@master
         env:
           CI: true
-          GIT_CONFIG_NAME: chenpan1@sfmail.sf-express.com
-          GIT_CONFIG_EMAIL: chenpan1@sfmail.sf-express.com
+          GIT_CONFIG_NAME: daxierhao
+          GIT_CONFIG_EMAIL: daxierhao@gmail.com
           NODE_OPTIONS: --max_old_space_size=4096
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           BRANCH: gh-pages
           FOLDER: 'dist/'
-          BUILD_SCRIPT: yarn && npm run docs:build && git checkout . && git clean -df
+          BUILD_SCRIPT: yarn && npm run site && git checkout . && git clean -df
