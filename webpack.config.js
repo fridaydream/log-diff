@@ -3,10 +3,10 @@ const path = require('path');
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    library: 'ProTable',
+    library: 'LogDiff',
     libraryExport: 'default',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'pro-table.umd.js',
+    filename: 'log-diff.umd.js',
     globalObject: 'this',
   },
   mode: 'production',

@@ -21,6 +21,48 @@ footer: Open-source MIT Licensed | Copyright © 2020-present
 
 [![](https://img.shields.io/npm/dw/log-diff.svg)](https://www.npmjs.com/package/log-diff) [![npm package](https://img.shields.io/npm/v/log-diff.svg?style=flat-square?style=flat-square)](https://www.npmjs.com/package/log-diff) [![](https://img.shields.io/github/issues/fridaydream/log-diff.svg)](https://github.com/fridaydream/log-diff/issues) [![Dependencies](https://img.shields.io/david/fridaydream/log-diff.svg?style=flat-square)](https://david-dm.org/fridaydream/log-diff) [![DevDependencies](https://img.shields.io/david/dev/fridaydream/log-diff.svg?style=flat-square)](https://david-dm.org/fridaydream/log-diff?type=dev)
 
+```tsx | inline
+import React from 'react';
+import GitHubButton from 'react-github-btn';
+
+export default () => (
+  <div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 16,
+      }}
+    >
+      <GitHubButton
+        href="https://github.com/fridaydream/log-diff"
+        data-color-scheme="no-preference: light; light: light; dark: light;"
+        data-size="large"
+        data-show-count="true"
+        aria-label="Star log-diff on GitHub"
+      >
+        Star
+      </GitHubButton>
+      <div
+        style={{
+          margin: '0 8px',
+        }}
+      />
+      <GitHubButton
+        href="https://github.com/fridaydream/log-diff/issues"
+        data-color-scheme="no-preference: light; light: light; dark: light;"
+        data-size="large"
+        data-show-count="true"
+        aria-label="Issue log-diff on GitHub"
+      >
+        Issue
+      </GitHubButton>
+    </div>
+  </div>
+);
+```
+
 
 # API
 

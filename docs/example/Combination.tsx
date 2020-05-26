@@ -40,7 +40,7 @@ const Demo = () => {
       <Title level={3} style={{ marginBottom: 32 }}>
         基础信息
       </Title>
-      <LogDiff.Input label="期间" name={[['basic', 'start'], ['basic', 'start']]} />
+      <LogDiff.Input label="期间" name={[['basic', 'start'], ['basic', 'end']]} />
     </LogDiff>
   )
 }
