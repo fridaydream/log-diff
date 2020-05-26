@@ -12,12 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - run: yarn
-      - run: yarn run lint
-      # - run: yarn run tsc
+      - run: npm run site && npm run deploy
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@master
-        env:
-          CI: true
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          NODE_OPTIONS: --max_old_space_size=4096
-          BUILD_SCRIPT: yarn && npm run site && npm run deploy && git checkout . && git clean -df
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          BRANCH: gh-pages
+          FOLDER: dist
+       
