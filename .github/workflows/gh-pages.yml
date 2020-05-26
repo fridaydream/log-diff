@@ -18,8 +18,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@master
         env:
           CI: true
-          GIT_CONFIG_NAME: fridaydream
-          GIT_CONFIG_EMAIL: 609457773@qq.com
+          GIT_CONFIG_NAME: chenpan1@sfmail.sf-express.com
+          GIT_CONFIG_EMAIL: chenpan1@sfmail.sf-express.com
           NODE_OPTIONS: --max_old_space_size=4096
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
