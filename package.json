@@ -1,6 +1,6 @@
 {
   "name": "log-diff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "log compare",
   "repository": "https://github.com/fridaydream/log-diff",
   "scripts": {
