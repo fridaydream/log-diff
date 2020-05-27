@@ -2,13 +2,13 @@
 
 exports[`BasicLogDiff 🎏 Combination use  1`] = `
 <div
-  class="space-divide"
+  class="log-diff-space-divide"
 >
   <span
     class="ant-typography log-diff-item-label"
   >
     <span
-      class="label-sign"
+      class="log-diff-label-sign"
     >
       期间
     </span>
@@ -17,29 +17,29 @@ exports[`BasicLogDiff 🎏 Combination use  1`] = `
     class="ant-typography"
   >
     <span
-      class="pass space"
+      class="log-diff-pass log-diff-space"
     >
       <span
-        class="space"
+        class="log-diff-space"
       >
         2020-05-25
       </span>
       <span
-        class="space"
+        class="log-diff-space"
       >
         2020-05-27
       </span>
     </span>
     <span
-      class="now"
+      class="log-diff-now"
     >
       <span
-        class="space"
+        class="log-diff-space"
       >
         2020-05-28
       </span>
       <span
-        class="space"
+        class="log-diff-space"
       >
         2020-05-29
       </span>
@@ -51,13 +51,13 @@ exports[`BasicLogDiff 🎏 Combination use  1`] = `
 exports[`BasicLogDiff 🎏 base use 1`] = `
 Array [
   <div
-    class="space-divide"
+    class="log-diff-space-divide"
   >
     <span
       class="ant-typography log-diff-item-label"
     >
       <span
-        class="label-sign"
+        class="log-diff-label-sign"
       >
         合同名称
       </span>
@@ -66,29 +66,29 @@ Array [
       class="ant-typography"
     >
       <span
-        class="pass space"
+        class="log-diff-pass log-diff-space"
       >
         <span
-          class="space"
+          class="log-diff-space"
         >
           众包挂靠
         </span>
       </span>
       <span
-        class="now"
+        class="log-diff-now"
       >
         -
       </span>
     </span>
   </div>,
   <div
-    class="space-divide"
+    class="log-diff-space-divide"
   >
     <span
       class="ant-typography log-diff-item-label"
     >
       <span
-        class="label-sign"
+        class="log-diff-label-sign"
       >
         身份证人像面照片
       </span>
@@ -97,7 +97,7 @@ Array [
       class="ant-typography"
     >
       <span
-        class="pass space"
+        class="log-diff-pass log-diff-space"
       >
         <a
           href="http://erp-1258916733.cos.ap-shanghai.myqcloud.com/manage/temp/378bbd5adad4e1f0266518522c559e42.mov"
@@ -106,20 +106,20 @@ Array [
         </a>
       </span>
       <span
-        class="now"
+        class="log-diff-now"
       >
         -
       </span>
     </span>
   </div>,
   <div
-    class="space-divide"
+    class="log-diff-space-divide"
   >
     <span
       class="ant-typography log-diff-item-label"
     >
       <span
-        class="label-sign"
+        class="log-diff-label-sign"
       >
         有效期限是否长期
       </span>
@@ -128,19 +128,19 @@ Array [
       class="ant-typography"
     >
       <span
-        class="pass space"
+        class="log-diff-pass log-diff-space"
       >
         <span
-          class="space"
+          class="log-diff-space"
         >
           否
         </span>
       </span>
       <span
-        class="now"
+        class="log-diff-now"
       >
         <span
-          class="space"
+          class="log-diff-space"
         >
           是
         </span>
@@ -167,13 +167,13 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
           class="ant-list-item"
         >
           <div
-            class="space-divide"
+            class="log-diff-space-divide"
           >
             <span
               class="ant-typography log-diff-item-label"
             >
               <span
-                class="label-sign"
+                class="log-diff-label-sign"
               >
                 地区
               </span>
@@ -182,34 +182,34 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
               class="ant-typography"
             >
               <span
-                class="pass space"
+                class="log-diff-pass log-diff-space"
               >
                 <span
-                  class="space"
+                  class="log-diff-space"
                 >
                   北京
                 </span>
                 <span
-                  class="space"
+                  class="log-diff-space"
                 >
                   上海
                 </span>
               </span>
               <span
-                class="now"
+                class="log-diff-now"
               >
                 -
               </span>
             </span>
           </div>
           <div
-            class="space-divide"
+            class="log-diff-space-divide"
           >
             <span
               class="ant-typography log-diff-item-label"
             >
               <span
-                class="label-sign"
+                class="log-diff-label-sign"
               >
                 证书
               </span>
@@ -218,16 +218,16 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
               class="ant-typography"
             >
               <span
-                class="pass space"
+                class="log-diff-pass log-diff-space"
               >
                 <span
-                  class="space"
+                  class="log-diff-space"
                 >
                   a287
                 </span>
               </span>
               <span
-                class="now"
+                class="log-diff-now"
               >
                 -
               </span>
@@ -238,13 +238,13 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
           class="ant-list-item"
         >
           <div
-            class="space-divide"
+            class="log-diff-space-divide"
           >
             <span
               class="ant-typography log-diff-item-label"
             >
               <span
-                class="label-sign"
+                class="log-diff-label-sign"
               >
                 地区
               </span>
@@ -253,29 +253,29 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
               class="ant-typography"
             >
               <span
-                class="pass space"
+                class="log-diff-pass log-diff-space"
               >
                 <span
-                  class="space"
+                  class="log-diff-space"
                 >
                   上海
                 </span>
               </span>
               <span
-                class="now"
+                class="log-diff-now"
               >
                 -
               </span>
             </span>
           </div>
           <div
-            class="space-divide"
+            class="log-diff-space-divide"
           >
             <span
               class="ant-typography log-diff-item-label"
             >
               <span
-                class="label-sign"
+                class="log-diff-label-sign"
               >
                 证书
               </span>
@@ -284,16 +284,16 @@ exports[`BasicLogDiff 🎏 list use  1`] = `
               class="ant-typography"
             >
               <span
-                class="pass space"
+                class="log-diff-pass log-diff-space"
               >
                 <span
-                  class="space"
+                  class="log-diff-space"
                 >
                   a273
                 </span>
               </span>
               <span
-                class="now"
+                class="log-diff-now"
               >
                 -
               </span>
