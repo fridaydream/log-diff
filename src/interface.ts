@@ -1,9 +1,9 @@
 import React from 'react';
 
-export interface NestedArray<T> extends Array<T | NestedArray<T>> { }
+export interface NestedArray<T> extends Array<T | NestedArray<T>> {}
 
 export interface Content {
-  [key: string]: any
+  [key: string]: any;
 }
 
 interface Data {
@@ -20,9 +20,10 @@ export interface LogDiffProps {
 export type NamePath = (string | number)[];
 
 export interface ItemProps {
+  constants?: Content;
   className?: string;
   label: string;
-  name: NamePath | (NamePath)[];
+  name: NamePath | NamePath[];
 }
 
 export interface LabelProps {

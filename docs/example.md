@@ -6,7 +6,6 @@ nav:
   title: 例子
   order: 1
   key: 1
-
 ---
 
 # 各种示例
@@ -20,6 +19,10 @@ nav:
 ## 组合展示
 
 <code src="./example/Combination.tsx" />
+
+## 自定义映射
+
+<code src="./example/Radio.tsx" />
 
 ## 多维展示
 

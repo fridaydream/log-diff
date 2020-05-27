@@ -3,10 +3,10 @@ import React, { useContext } from 'react';
 import classNames from 'classnames';
 import warning from 'rc-util/lib/warning';
 import isEqual from 'lodash.isequal';
-import DiffContext from '../Context'
-import { RenderLabel, RenderContent } from '../Content'
-import { ItemProps, NamePath, NestedArray, Store } from '../interface'
-import { getArrayLast, getValue } from '../valueUtil'
+import DiffContext from '../Context';
+import { RenderLabel, RenderContent } from '../Content';
+import { ItemProps, NamePath, NestedArray, Store } from '../interface';
+import { getArrayLast, getValue } from '../valueUtil';
 
 const getArrayValue = (value: Store, name: NamePath) => {
   const result = getValue(value, name);
@@ -17,15 +17,12 @@ const getArrayValue = (value: Store, name: NamePath) => {
     return [result];
   }
   return [];
-}
+};
 
 const Radio = (props: ItemProps) => {
   const { before, after, constants } = useContext(DiffContext);
-  const {
-    label,
-    name,
-    className: propsClassName,
-  } = props;
+  const { label, name, constants: radioConstants, ...rest } = props;
+  const constantsResult = { ...constants, ...radioConstants };
   const hasArray = name.some((item: any) => Array.isArray(item));
   if (hasArray) {
     // 映射类型暂时不支持多维数组
@@ -37,35 +34,31 @@ const Radio = (props: ItemProps) => {
     if (values.length === 0) {
       return '-';
     }
-    return values.map(value => {
+    return values.map((value) => {
       return (
-        <span className={classNames('space')} key={`${value}`}>
-          {
-            value && constants[getArrayLast(name as NamePath)] ? constants[getArrayLast(name as NamePath)][value] : ''
-          }
+        <span className={classNames('log-diff-space')} key={`${value}`}>
+          {value && constantsResult[getArrayLast(name as NamePath)]
+            ? constantsResult[getArrayLast(name as NamePath)][value]
+            : ''}
         </span>
-      )
-    })
-  }
-  
+      );
+    });
+  };
+
   const beforeValue = getArrayValue(before, name as NamePath);
   const afterValue = getArrayValue(after, name as NamePath);
   const isSame = isEqual(beforeValue, afterValue);
 
   return (
-    <div className={classNames('space-divide', propsClassName)}>
+    <div className={classNames('log-diff-space-divide')} {...rest}>
       <RenderLabel isSame={isSame} label={label} />
       <RenderContent
         isSame={isSame}
-        beforeNode={
-          IteratorValue(beforeValue)
-        }
-        afterNode={
-          IteratorValue(afterValue)
-        }
+        beforeNode={IteratorValue(beforeValue)}
+        afterNode={IteratorValue(afterValue)}
       />
     </div>
-  )
-}
+  );
+};
 
 export default Radio;
