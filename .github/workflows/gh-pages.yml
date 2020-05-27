@@ -16,9 +16,8 @@ jobs:
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@master
         with:
-          GIT_CONFIG_NAME: daxierhao
-          GIT_CONFIG_EMAIL: daxierhao@gmail.com
+          GIT_CONFIG_NAME: fridaydream
+          GIT_CONFIG_EMAIL: number2demon@gmail.com
           ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           BRANCH: gh-pages
           FOLDER: dist
-       
