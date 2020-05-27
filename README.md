@@ -12,47 +12,7 @@
 
 </div>
 
-```tsx | inline
-import React from 'react';
-import GitHubButton from 'react-github-btn';
-
-export default () => (
-  <div>
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 16,
-      }}
-    >
-      <GitHubButton
-        href="https://github.com/fridaydream/log-diff"
-        data-color-scheme="no-preference: light; light: light; dark: light;"
-        data-size="large"
-        data-show-count="true"
-        aria-label="Star fridaydream/log-diff on GitHub"
-      >
-        Star
-      </GitHubButton>
-      <div
-        style={{
-          margin: '0 8px',
-        }}
-      />
-      <GitHubButton
-        href="https://github.com/fridaydream/log-diff/issues"
-        data-color-scheme="no-preference: light; light: light; dark: light;"
-        data-size="large"
-        data-show-count="true"
-        aria-label="Issue fridaydream/log-diff on GitHub"
-      >
-        Issue
-      </GitHubButton>
-    </div>
-  </div>
-);
-```
+![展示效果](http://iuap-tenat-market.oss-cn-beijing.aliyuncs.com/0012881219992-9922-11/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_596cd906-40f8-4758-8c2c-9419ae040faa.png)
 
 # API
 
