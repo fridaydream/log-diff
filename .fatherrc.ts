@@ -1,7 +1,7 @@
 export default {
   entry: 'src/index.tsx',
   esm: {
-    type: 'babel',
+    type: 'rollup',
     importLibToEs: true,
   },
   cjs: 'babel',
